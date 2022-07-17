@@ -1,0 +1,280 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 2rem;
+}
+
+.welcome {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  min-height: 65px;
+}
+
+.logout_icon {
+  width: 2.6rem;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+.btn:active {
+  transform: scale(1) rotate(-2deg);
+}
+
+.active {
+  transform: scale(1.2);
+}
+
+.settings {
+  position: relative;
+  width: 4.4rem;
+  height: 4.4rem;
+  color: rgb(81, 43, 43);
+  cursor: pointer;
+}
+
+.settings_icon {
+  transition: all 0.1s linear;
+}
+
+.settings:hover .settings_icon {
+  transform: rotate(40deg);
+  transition: all 0.1s linear;
+}
+
+.settings_modal {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  min-width: 20rem;
+  min-height: 10rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  text-align: center;
+  background-color: white;
+  transform: translateX(-50%);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  z-index: 10;
+}
+
+.settings_modal button {
+  min-width: 100%;
+  min-height: 4rem;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.line {
+  background-color: rgb(59, 59, 59);
+  height: 1px;
+  width: 100%;
+}
+
+.btn_normal {
+  background-color: aliceblue;
+}
+
+.btn_normal:hover {
+  background-color: rgb(47, 32, 32);
+  color: white;
+}
+
+.btn_normal:active {
+  background-color: rgb(57, 57, 57);
+}
+
+.btn_delete {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  color: white;
+}
+
+.btn_delete:hover {
+  background-image: linear-gradient(to top left, #7423379b, #ff585f);
+}
+
+.btn_delete:active {
+  background-image: linear-gradient(to top left, #d03159c9, #b2464bb6);
+}
+
+.btn_confirm {
+  position: relative;
+  height: 4rem;
+}
+
+.back,
+.go {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+
+.back {
+  background-image: linear-gradient(to top left, #2cac5d, #24de6b);
+}
+
+.back:hover {
+  background-image: linear-gradient(to top left, #48c076, #248d4c);
+}
+
+.go {
+  background-image: linear-gradient(to top left, #ed213a, #e3675a);
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.go:hover {
+  background-image: linear-gradient(to top left, #df3f52, #ac3e32);
+}
+
+.btn_confirm div svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.6rem;
+  color: white;
+}
+
+@media (max-width: 43.75em) {
+  .logout_reg {
+    display: contents;
+  }
+
+  .welcome_reg {
+    display: none;
+  }
+
+  .welcome {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+  .logout_icon {
+    width: 2rem;
+  }
+  .settings {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .settings_modal {
+    min-width: 13rem;
+    min-height: 8rem;
+  }
+
+  .settings_modal button {
+    min-width: 100%;
+    min-height: 3.4rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .btn_confirm {
+    height: 3rem;
+  }
+  .btn_confirm div svg {
+    width: 1.6rem;
+  }
+}
+
+@media (max-width: 28.125em) {
+  .welcome {
+    font-size: 1.4rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+  }
+  .logout_icon {
+    width: 1.4rem;
+  }
+  .logout {
+    gap: 1rem;
+  }
+  .settings {
+    width: 3rem;
+    height: 3rem;
+  }
+  .settings_modal {
+    min-width: 10rem;
+    min-height: 6rem;
+    border-radius: 10px;
+  }
+
+  .settings_modal button {
+    min-width: 100%;
+    min-height: 3rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.6px;
+  }
+  .btn_confirm {
+    height: 2.2rem;
+    padding-bottom: 2rem;
+  }
+  .btn_confirm div svg {
+    width: 1.4rem;
+  }
+}
+
+@media (max-width: 21.25em) {
+  .welcome {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+  .logout_icon {
+    width: 1.4rem;
+  }
+  .logout {
+    gap: 0.4rem;
+  }
+  .settings {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .settings_modal {
+    min-width: 9rem;
+    min-height: 6rem;
+  }
+  .settings_modal button {
+    min-height: 3rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.3px;
+  }
+  .btn_confirm {
+    height: 2rem;
+  }
+}

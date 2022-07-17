@@ -1,0 +1,25 @@
+.container {
+  max-width: 100rem;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: auto repeat(3, 15rem) auto;
+  gap: 2rem;
+  opacity: 1;
+  transition: all 1s;
+}
+
+@media (max-width: 68.75em) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 56rem;
+  }
+}
+
+@media (max-width: 43.75em) {
+  .container {
+    margin: 4rem auto;
+    max-width: 90%;
+  }
+}

@@ -1,0 +1,170 @@
+.register_container {
+  margin: 5rem auto 0rem auto;
+  max-width: fit-content;
+  background-image: linear-gradient(to top left, #2193b0, #6dd5ed);
+  /* position: relative; */
+  padding: 3rem 5rem;
+}
+
+.register_container h1 {
+  text-align: center;
+  padding-bottom: 1.6rem;
+  font-size: 2.4rem;
+}
+
+.register_container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.register_container form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.register_container form div label {
+  font-size: 1.5rem;
+}
+
+.register_container form div p {
+  font-size: 1.2rem;
+  color: rgb(160, 6, 6);
+}
+
+.register_container form div input,
+.register_container form div select,
+.register_container form button {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #333;
+  padding: 0.3rem 4rem;
+  border-radius: 0.7rem;
+  transition: all 0.2s;
+}
+.register_container form div input:focus,
+.register_container form div select:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.register_container form div input:hover,
+.register_container form div select:hover,
+.register_container form button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.register_container form button,
+.register_container form div select {
+  cursor: pointer;
+}
+
+.register_container a {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-self: flex-end;
+  color: #333;
+}
+
+.register_container a:hover {
+  text-decoration: none;
+}
+
+.register_container a:visited {
+  color: black;
+}
+
+@media (max-width: 43.75em) {
+  .register_container {
+    padding: 3rem 3.5rem;
+  }
+
+  .register_container h1 {
+    font-size: 2rem;
+  }
+  .register_container form div label {
+    font-size: 1.3rem;
+  }
+
+  .register_container form div p {
+    font-size: 1.1rem;
+  }
+
+  .register_container form div input,
+  .register_container form div select,
+  .register_container form button {
+    font-size: 1.4rem;
+    padding: 0.3rem 4rem;
+  }
+
+  .register_container a {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 28.125em) {
+  .register_container {
+    max-width: 90%;
+    padding: 3rem 4rem;
+  }
+
+  .register_container h1 {
+    padding-bottom: 1.2rem;
+    font-size: 2rem;
+  }
+
+  .register_container form div label {
+    font-size: 1.2rem;
+  }
+
+  .register_container form div p {
+    font-size: 1rem;
+  }
+
+  .register_container form div input,
+  .register_container form div select,
+  .register_container form button {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0.3rem 4rem;
+  }
+
+  .register_container a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 21.25em) {
+  .register_container {
+    max-width: 90%;
+    padding: 3rem 2rem;
+  }
+
+  .register_container h1 {
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .register_container form div label {
+    font-size: 1.2rem;
+  }
+
+  .register_container form div p {
+    font-size: 1rem;
+  }
+
+  .register_container form div input,
+  .register_container form div select,
+  .register_container form button {
+    font-size: 1.2rem;
+  }
+
+  .register_container a {
+    font-size: 0.9rem;
+  }
+}

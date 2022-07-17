@@ -1,0 +1,158 @@
+.login_container {
+  margin: 15rem auto 0rem auto;
+  max-width: fit-content;
+  background-image: linear-gradient(to top left, #fd2daa, #ba90ab);
+}
+
+.login_container h1 {
+  text-align: center;
+  padding-bottom: 1.6rem;
+  font-size: 2.4rem;
+}
+
+.login_container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.login_container form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.login_container form div label {
+  font-size: 1.5rem;
+}
+
+.login_container form div p {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+
+.login_container form div input,
+.login_container form button {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #333;
+  padding: 0.3rem 4rem;
+  border-radius: 0.7rem;
+  transition: all 0.2s;
+}
+.login_container form div input:focus,
+.login_container form button:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.login_container form div input:hover,
+.login_container form button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.login_container form button {
+  cursor: pointer;
+}
+
+.login_container a {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-self: flex-end;
+}
+
+.login_container a:hover {
+  text-decoration: none;
+}
+
+.login_container a:visited {
+  color: #333;
+}
+
+.login {
+  margin-top: 5rem;
+}
+
+@media (max-width: 68.75em) {
+  .login_container {
+    margin: 5rem auto 10rem auto;
+  }
+}
+
+@media (max-width: 43.75em) {
+  .login_container {
+    margin: 5rem auto 0rem auto;
+  }
+
+  .login_container h1 {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .login_container form {
+    gap: 0.8rem;
+  }
+
+  .login_container form div {
+    gap: 0.5rem;
+  }
+  .login_container form div label {
+    font-size: 1.2rem;
+  }
+
+  .login_container form div p {
+    font-size: 1rem;
+  }
+
+  .login_container form div input,
+  .login_container form button {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.3rem 2rem;
+    border-radius: 0.7rem;
+  }
+
+  .login_container a {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .login {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 28.125em) {
+  .login_container {
+    margin: 4rem auto 0rem auto;
+  }
+
+  .login_container h1 {
+    font-size: 1.6rem;
+  }
+
+  .login_container form div label {
+    font-size: 1rem;
+  }
+
+  .login_container form div p {
+    font-size: 0.9rem;
+  }
+
+  .login_container form div input,
+  .login_container form button {
+    font-size: 1.1rem;
+  }
+
+  .login_container a {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .login {
+    margin-top: 3rem;
+  }
+}
